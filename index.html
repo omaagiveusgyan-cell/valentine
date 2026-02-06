@@ -10,7 +10,10 @@
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    background-image: url("bg.jpg");   /* your image */
+    background-size: cover;           /* fill screen */
+    background-position: center;      /* center image */
+    background-repeat: no-repeat;     /* no repeat */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +73,7 @@
 <body>
 
 <div class="box">
-  <h1>ANCHAL,<br>Will you be my Valentine? ❤️</h1>
+  <h1>ANCHAL,<br>❤️❤️❤️❤️ Will you be my Valentine? ❤️❤️❤️❤️</h1>
   <button id="yes">YES</button>
   <button id="no">NO</button>
 </div>
@@ -117,7 +120,7 @@
   setInterval(() => {
     const heart = document.createElement("div");
     heart.className = "heart";
-    heart.innerHTML = "❤️";
+    heart.innerHTML = "❤️❤️❤️❤️❤️❤️";
     heart.style.left = Math.random() * 100 + "vw";
     heart.style.fontSize = Math.random() * 20 + 15 + "px";
     heart.style.animationDuration = Math.random() * 3 + 4 + "s";
